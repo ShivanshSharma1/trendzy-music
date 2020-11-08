@@ -6,16 +6,6 @@ import 'bootstrap/dist/css/bootstrap.min.css'
 import { Col, Container, Row } from "reactstrap";
 import VideoPlayer from './VideoPlayer';
 
-const Try = ({ url }) => {
-  return <div style={{position:'relative',height:'1000px'}}>
-  <div>
-    <div  class="embed-responsive embed-responsive-16by9" style={{width:'75%',margin:'auto', marginTop:'3.5%'}}>
-      <iframe class="embed-responsive-item" src={`https://www.youtube.com/embed/${url}?rel=0`} title="Song's Video" ></iframe>
-    </div>
-  </div>
-  </div>
-}
-
 const App = () => {
   let [videoData, setVideoData] = useState()
 
