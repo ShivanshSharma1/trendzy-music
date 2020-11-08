@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@300&display=swap');
+.trending {
+    font-family: Big Shoulders Stencil Text;
+}
+
+@media (max-width: 428px) {
+    .songtitle{ 
+        font-size: 1.2rem;
+    }
+    .trending {
+        font-size: 9vw;
+    }
+    .songtitle2 {
+        font-size:  3vw;
+    }
+    .carouselbutton {
+        font-size: 14vw;
+    }
+    .moresongs {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 429px) and (max-width: 567px){
+    .songtitle{
+        font-size: 1.5rem;
+    }
+    .trending {
+        font-size: 0.99em;
+    }
+    .songtitle2 {
+        font-size: ;
+    }
+    .moresongs {
+        visibility: hidden;
+    }
+}
+
+@media (min-width: 568px) and (max-width: 1140px){
+    .songtitle{
+        font-size: 1.7rem;
+    }
+    .trending {
+        font-size: 1.2em;
+    }
+    .songtitle2 {
+        font-size: ;
+    }
+}
+
+@media (min-width: 1141px) {
+    .songtitle{
+        font-size: 1.7rem;
+    }
+    .trending {
+        font-size: 1.5em;
+    }
+    .songtitle2 {
+        font-size: 1.5vw;
+    }
+}
+
+/* for more trending songs auto-scroll button */
+@media (min-width: 568px) and (max-width: 849px){
+    .moresongs {
+        visibility: hidden;
+    }
+}
