@@ -4,7 +4,7 @@ import MoreSongs from './MoreSongs'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import { Col, Container, Row } from "reactstrap";
-// import
+import VideoPlayer from './VideoPlayer';
 
 const Try = ({ url }) => {
   return <div style={{position:'relative',height:'1000px'}}>
@@ -33,7 +33,7 @@ const App = () => {
     <div>
       <Router>
       <Switch>
-          {videoData ? videoData.items.map((l) => <Route path={`/${l.id}`} ><Try url={l.id}/> </Route>): <div></div>}
+          {videoData ? videoData.items.map((l) => <Route path={`/${l.id}`} ><VideoPlayer url={l.id}/> </Route>): <div></div>}
           <Route path='/'>
                   {videoData ? <Container fluid={true}><Row><Col className='p-0'><Top4 videoData={videoData.items.slice(0, 5)}/></Col></Row></Container> : <div>Loading</div>}
                   {videoData ? <MoreSongs videoData={videoData.items.slice(5,)} /> : <div></div>}

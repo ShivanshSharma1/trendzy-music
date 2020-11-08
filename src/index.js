@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import NavBar from './Navbar'
 import { Col, Container, Row } from 'reactstrap';
-import './font.css'
+import './style.css'
 
 
 ReactDOM.render(

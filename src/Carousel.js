@@ -10,7 +10,7 @@ import {
 import styled from 'styled-components';
 import Scrollchor from 'react-scrollchor';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import './font.css'
+import './style.css'
 
 const CarouselVideoButton = styled.div`
   position:absolute;
@@ -90,7 +90,7 @@ const Top4 = ({videoData}) => {
         class="img-fluid w-100" style={{height:'50vw'}}/>
         <VideoTitle className='songtitle2'><p style={{width:'90vw', textAlign:'center', marginBottom:'30px'}}>{item.caption}</p></VideoTitle>
         <Link to={`/${item.id}`} target='_blank' ><CarouselVideoButton ><PlayFill className="carouselbutton" /></CarouselVideoButton></Link>
-        <Scrollchor to='moresongs'><MoreSongs className="btn btn- moresongs">MoreTrendingSongs</MoreSongs></Scrollchor>
+        <Scrollchor to='moresongs'><MoreSongs className="btn btn-outline-black moresongs">MoreTrendingSongs</MoreSongs></Scrollchor>
       </CarouselItem>
     );
   });

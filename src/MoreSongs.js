@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, CardImg, CardText, Col, Container, Row} from "reactstrap";
 import { PlayFill } from "react-bootstrap-icons";
 import { Link } from 'react-router-dom'
-import './font.css'
+import './style.css'
 import TextTruncate from "react-text-truncate";
 
 
