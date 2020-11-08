@@ -1,9 +1,8 @@
-import { lazy, Suspense, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import Top4 from './Carousel'
 import MoreSongs from './MoreSongs'
-import { BrowserRouter as Router, Link, Route, Switch, useParams, useRouteMatch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import NavBar from "./Navbar";
 import { Col, Container, Row } from "reactstrap";
 // import
 
@@ -11,7 +10,7 @@ const Try = ({ url }) => {
   return <div style={{position:'relative',height:'1000px'}}>
   <div>
     <div  class="embed-responsive embed-responsive-16by9" style={{width:'75%',margin:'auto', marginTop:'3.5%'}}>
-      <iframe class="embed-responsive-item" src={`https://www.youtube.com/embed/${url}?rel=0`} ></iframe>
+      <iframe class="embed-responsive-item" src={`https://www.youtube.com/embed/${url}?rel=0`} title="Song's Video" ></iframe>
     </div>
   </div>
   </div>

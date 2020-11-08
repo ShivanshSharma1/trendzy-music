@@ -1,5 +1,4 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, NavbarBrand } from 'reactstrap';
 
 const NavBar = () => {
     return (

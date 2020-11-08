@@ -2,7 +2,7 @@ import styled from "styled-components"
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Card, CardBody, CardImg, CardText, Col, Container, Row} from "reactstrap";
 import { PlayFill } from "react-bootstrap-icons";
-import { BrowserRouter as Router, Link, Route, Switch } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './font.css'
 import TextTruncate from "react-text-truncate";
 
