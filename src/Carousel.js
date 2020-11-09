@@ -51,6 +51,7 @@ const MoreSongs = styled.button`
   color:white;
   border: 3px solid rgb(255, 255, 255, 0.2);
   border-radius: 5px;
+  background-color:transparent;
 `
 const Top4 = ({videoData}) => {
     let items = []
@@ -90,7 +91,7 @@ const Top4 = ({videoData}) => {
         class="img-fluid w-100" style={{height:'50vw'}}/>
         <VideoTitle className='songtitle2'><p style={{width:'90vw', textAlign:'center', marginBottom:'30px'}}>{item.caption}</p></VideoTitle>
         <Link to={`/${item.id}`} target='_blank' ><CarouselVideoButton ><PlayFill className="carouselbutton" /></CarouselVideoButton></Link>
-        <Scrollchor to='moresongs'><MoreSongs className="btn btn-outline-black moresongs">MoreTrendingSongs</MoreSongs></Scrollchor>
+        <Scrollchor to='moresongs'><MoreSongs className="moresongs">MoreTrendingSongs</MoreSongs></Scrollchor>
       </CarouselItem>
     );
   });
