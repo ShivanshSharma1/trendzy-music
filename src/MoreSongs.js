@@ -30,7 +30,7 @@ const Song = ({ video }) => {
         <div style={{position: 'relative'}}>
             <CardImg style={{width:''}} src={video.snippet.thumbnails.maxres.url}>
             </CardImg>
-            <Link to={`/${video.id}`}><Button><PlayFill/></Button></Link>
+            <Link to={`/${video.id}`} target="_blank"><Button><PlayFill/></Button></Link>
             
         </div>
             <CardBody style={{backgroundColor:'rgb(41,60,71)', height:'100px'}}>

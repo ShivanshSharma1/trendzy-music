@@ -89,7 +89,7 @@ const Top4 = ({videoData}) => {
         <img src={item.src} alt={item.altText} 
         class="img-fluid w-100" style={{height:'50vw'}}/>
         <VideoTitle className='songtitle2'><p style={{width:'90vw', textAlign:'center', marginBottom:'30px'}}>{item.caption}</p></VideoTitle>
-        <Link to={`/${item.id}`}><CarouselVideoButton ><PlayFill className="carouselbutton" /></CarouselVideoButton></Link>
+        <Link to={`/${item.id}`} target='_blank' ><CarouselVideoButton ><PlayFill className="carouselbutton" /></CarouselVideoButton></Link>
         <Scrollchor to='moresongs'><MoreSongs className="btn btn-outline-black moresongs">MoreTrendingSongs</MoreSongs></Scrollchor>
       </CarouselItem>
     );
